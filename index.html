@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="signup-container">
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">I agree to the terms and conditions</label>
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <p>
+        If you have already registered, <a href="login.html">click here</a> to
+        log in.
+      </p>
+    </div>
+
+    <div id="product-section" class="hidden">
+      <div class="buttons">
+        <button id="all-products">All</button>
+        <button id="men-products">Mens</button>
+        <button id="jewelery">Jewelery</button>
+        <button id="electronics">Electronics</button>
+        <button id="womens">Women</button>
+      </div>
+      <div id="loader" class="loader"></div>
+      <div class="cards" id="product-list"></div>
+    </div>
+
+    <script src="dist/script.js"></script>
+  </body>
+</html>
